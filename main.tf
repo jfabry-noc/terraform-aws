@@ -20,7 +20,7 @@ provider "aws" {
   region = "us-east-2"
 }
 
-resource "aws_instance" "app_server" {
+resource "aws_instance" "jfabry-actions-test" {
   ami           = var.instance_ami
   instance_type = var.instance_size
 
