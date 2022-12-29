@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "loopednetwork"
+    workspaces {
+      name = "terraform-aws"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
