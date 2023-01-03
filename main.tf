@@ -25,7 +25,7 @@ resource "aws_instance" "jfabry-actions-test" {
   instance_type = var.instance_size
 
   tags = {
-    Name = var.instance_name
+    Name = "jfabry-actions-test"
   }
 }
 
